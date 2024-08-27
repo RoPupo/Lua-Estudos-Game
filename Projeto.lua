@@ -127,39 +127,3 @@ if fichaPersonagem.statusPersonagem.magias.level3 == false then
     end
 end
 print("|===============================================================|")
-
-
-
-
-
-
-
-
-
-
-
-
---[[
-print ("Suas magias atuais:")
-
-if fichaPersonagem.statusPersonagem.magias.level1 == false then 
-    print("Voce nao tem magias lvl1")
-    else if fichaPersonagem.statusPersonagem.magias.level1 then
-        print("|",fichaPersonagem.statusPersonagem.magias.level1, "|") 
-    end
-end
-
-if fichaPersonagem.statusPersonagem.magias.level2 == false then 
-    print("|Você não possui magias do segundo circulo                     |")
-    else if fichaPersonagem.statusPersonagem.magias.level2 == true then
-        print("|",fichaPersonagem.statusPersonagem.magias.level1, "|")) 
-    end
-end
-
-if fichaPersonagem.statusPersonagem.magias.level3 == false then 
-    print("|Você não possui magias do terceiro circulo                    |")
-    else if fichaPersonagem.statusPersonagem.magias.level3 == true then
-        print("|",fichaPersonagem.statusPersonagem.magias.level1, "|") 
-    end
-end
-]]

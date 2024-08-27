@@ -1,5 +1,5 @@
 --- Nova função. Como é criada? O que pensar?
-function novaFuncao(soma)
+function novaFuncao()
    
 end
 
