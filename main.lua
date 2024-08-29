@@ -1,19 +1,24 @@
 
 -- Nova função, sem parametros e sem retorno.
-
+--[[
 local function novaFuncao()
-   os.execute("chcp 65001")
-   print("Olá, sou uma nova função !")
+       print("Olá, sou uma nova função !")
+end
+]]
+os.execute("chcp 65001")
+--- função com parametro e retorno !
+local function Mph(velocidadeKm) 
+    os.date()-- () é o parametro
+    local mph = velocidadeKm / 1.689
+    print ("Velocidade a ser convertida: "..velocidadeKm.."Km")
+    return string.format("%.2f", mph) -- Para retornar x.xx <- duas casas decimais
+    --- math.floor(mph) faz o arredondamento   
 end
 
-local function kmMph(velocidadeKm)
-    return velocidadeKm / 1.6
-end
+km = 100
 
-local function soma(a, b)
-    resulta = a + b
-    return resultado
-end
-a = 10
-b = 100
-print(soma( a + b))
+print("O vento hoje está a uma velocidade de " ..(Mph(km)).."Mp/h")
+print(os.date())
+
+
+
