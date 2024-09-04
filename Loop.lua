@@ -1,6 +1,6 @@
 --- Classe de Monstro
 MONSTER = {
-    Name = "Creeper",
+    Name = "Creeper Novo",
     Exp = 10,
     Hp = 15,
     anger = true,
