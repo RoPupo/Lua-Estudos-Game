@@ -5,6 +5,8 @@ local function novaFuncao()
        print("Olá, sou uma nova função !")
 end
 ]]
+
+
 print("")
 os.execute("chcp 65001")
 --- função com parametro e retorno !
@@ -26,6 +28,9 @@ print(os.date())
 
 --- Função com multiplos paramêtros e retornos.
 local function teste(a, b, c)
+    a = a or 0
+    b = b or 0
+    c = c or 0
     local a1 = Mph(a)
     local a2 = Mph(b)
     local a3 = Mph(c)
@@ -33,14 +38,20 @@ local function teste(a, b, c)
     return a1, a2, a3
 end
 
+
+
+
 print ("Conversões:", teste(100, 20, 1)) 
 --[[Não utilizar ".." 
-para concatenar varios valores]] 
+para concatenar varios valores]]
 
-local x, y, z = teste(50, 50, 10)
+ -- x = Mph(tonumber(io.read()))
+io.write("Entre o número a ser convertido:")
+x = Mph(tonumber(io.read()))
+ -- z = tonumber(io.read())
 print("")
 print("Conversões realizadas:")
-print(x.. " Mph")
-print(y.. " Mph")
-print(z.. " Mph")
+print(x, " Mph")
+--print(y.. " Mph")
+--print(z.. " Mph")
  -- Teste
